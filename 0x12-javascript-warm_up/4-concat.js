@@ -1,10 +1,13 @@
 #!/usr/bin/node
 const args = process.argv.slice(2);
-const firstArg = args[0];
-const secondArg = args[1];
+const arg1 = args[0];
+const arg2 = args[1];
 
-if (firstArg === undefined || secondArg === undefined) {
-    console.log("Usage: node script.js <arg1> <arg2>");
+if (arg1 === undefined || arg2 === undefined) {
+    console.log('undefined is undefined');
+} elseif {arg1 === defined || arg2 === undefined
+    console.log(`${arg1} is undefined`);
+}
 } else {
-    console.log(`${firstArg} is ${secondArg}`);
+    console.log(`${arg1} is ${arg2}`);
 }

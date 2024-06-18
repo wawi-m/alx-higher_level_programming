@@ -14,4 +14,4 @@ const args = process.argv.slice(2);
 const n = parseInt(args[0]);
 const ans = factorial(n);
 
-console.log(`The factorial of ${n} is: ${ans}`);
+console.log(`${ans}`);

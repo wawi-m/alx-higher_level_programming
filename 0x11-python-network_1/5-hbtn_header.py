@@ -2,6 +2,7 @@
 import requests
 import sys
 
+
 def fetch_x_request_id(url):
 
     try:
@@ -13,6 +14,7 @@ def fetch_x_request_id(url):
             print("No X-Request-Id found in the response headers.")
     except requests.exceptions.RequestException as e:
         print(f"Error fetching URL: {e}")
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:

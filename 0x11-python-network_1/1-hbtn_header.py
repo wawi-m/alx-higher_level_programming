@@ -4,16 +4,7 @@ import sys
 
 
 def fetch_x_request_id(url):
-    """
-    Fetches the value of the X-Request-Id variable from the header of the response
-    of the given URL.
 
-    Args:
-    - url (str): The URL to send the request to.
-
-    Prints:
-    - The value of the X-Request-Id variable found in the header of the response.
-    """
     try:
         with urllib.request.urlopen(url) as response:
             x_request_id = response.getheader('X-Request-Id')

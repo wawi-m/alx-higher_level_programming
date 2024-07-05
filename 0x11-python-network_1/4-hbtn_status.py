@@ -2,7 +2,7 @@
 """
 This module fetches the status from https://alx-intranet.hbtn.io/status
 using the requests package and displays the body of the response.
-""
+"""
 
 import requests
 
@@ -11,7 +11,7 @@ def fetch_status():
 """
 Fetches the status from the given URL and prints the response
 in a formatted manner.
-""
+"""
 
 url = 'https://alx-intranet.hbtn.io/status'
 

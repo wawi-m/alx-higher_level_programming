@@ -8,20 +8,18 @@ import requests
 
 
 def fetch_status():
-"""
-Fetches the status from the given URL and prints the response
-in a formatted manner.
-"""
+    """
+    Fetches the status from the given URL and prints the response
+    in a formatted manner.
+    """
+    url = 'https://alx-intranet.hbtn.io/status'
 
-url = 'https://alx-intranet.hbtn.io/status'
+    response = requests.get(url)
+    body = response.text
 
-response = requests.get(url)
-body = response.text
-print("Body response:")
-
-print("\t- type: {}".format(type(body)))
-print("\t- content: {}".format(body))
-print("\t- utf8 content: {}".format(body))
+    print("Body response:")
+    print("\t- type: {}".format(type(body)))
+    print("\t- content: {}".format(body))
 
 
 if __name__ == "__main__":

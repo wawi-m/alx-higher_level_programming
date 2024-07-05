@@ -9,7 +9,7 @@ import urllib.error
 import sys
 
 if __name__ == "__main__":
-    url = "http://localhost:5000"
+    url = "http://0.0.0.0:5000"
 
     try:
         with urllib.request.urlopen(url) as response:

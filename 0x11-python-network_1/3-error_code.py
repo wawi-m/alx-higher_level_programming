@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+This script takes in a URL, sends a request to the URL, and displays the body of the response (decoded in utf-8).
+It handles urllib.error.HTTPError exceptions and prints the error code if an exception occurs.
+"""
+
 import urllib.request
 import urllib.error
 import sys

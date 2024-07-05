@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import requests
 
 url = 'https://alx-intranet.hbtn.io/status'
